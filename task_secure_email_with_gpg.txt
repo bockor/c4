@@ -11,7 +11,7 @@ This task must be executed on an Ubuntu Deskop machine.
 
 - Edit /etc/hosts. Ensure you modify the 127.0.1.1 line into:
 	127.0.1.2       sks-xy
-  "x" & "y" are your initials (firstname - name)
+- "x" & "y" are your initials (firstname - name)
 - ping sks-xy to verify
 
 1)GnuPG CLI Commands for Encryption and Signing
@@ -65,49 +65,49 @@ If you encounter problems ("Server indicated a failure") then use the IP address
 
 Scenario:
 
--bockor sends K1[S1] to sks-xy
--bavik sends K2[S2] to sks-xy
--bavik searches bockor on sks-xy
--bavik imports K1[S1] from sks-xy
--bavik signs K1[S1] -> K1[S1,S2]
--bavik updates K1[S1,S2] to sks-xy
--bockor refreshes certificates from sks-xy
--ciney searches bockor on sks-xy
--ciney imports K1[S1,S2] from sks-xy
--ciney searches K2[S2] on sks-xy
--ciney imports K2[S2] from sks-xy
--ciney verifies signatures of bockor 
--bockor revokes K1[S1,S2] on sks-xy
--bockor updates the revoked K1[S1,S2] to sks-xy
--ciney refreshes certificates from sks-xy
--ciney launches Seahorse Key Management tool and makes a screenshot of the current GnuPG keys.
- He ensures that in Seahorse under " View -> Show Any " is selected.
- Bockor certificate should be shown revoked.
--ciney deletes bockor's key from his keyring
--ciney verifies whether the bockor deletion is reflected in Seahorse
+- bockor sends K1[S1] to sks-xy
+- bavik sends K2[S2] to sks-xy
+- bavik searches bockor on sks-xy
+- bavik imports K1[S1] from sks-xy
+- bavik signs K1[S1] -> K1[S1,S2]
+- bavik updates K1[S1,S2] to sks-xy
+- bockor refreshes certificates from sks-xy
+- ciney searches bockor on sks-xy
+- ciney imports K1[S1,S2] from sks-xy
+- ciney searches K2[S2] on sks-xy
+- ciney imports K2[S2] from sks-xy
+- ciney verifies signatures of bockor 
+- bockor revokes K1[S1,S2] on sks-xy
+- bockor updates the revoked K1[S1,S2] to sks-xy
+- ciney refreshes certificates from sks-xy
+- ciney launches Seahorse Key Management tool and makes a screenshot of the current GnuPG keys.
+  (S)he ensures that in Seahorse under " View -> Show Any " is selected.
+  Bockor certificate should be shown revoked.
+- ciney deletes bockor's key from his keyring
+- ciney verifies whether the bockor deletion is reflected in Seahorse
 
 
 3)Secure Email Exchange
   =====================
 
-Generate a real world production key pair and associate it to one or more of your personal email addresses.
-Install and configure the Enigmail package to work with the Thunderbird email client.
-Enforce the use of AES256 into your $HOME/gpg.conf file.
-Ensure that your key has a selfsigned signature (Default with GunpG).
-Make a team with one or more of your colleagues.
-Send your colleague an encrypted email WITH the "/etc/protocols" file as an attachment using his public key.
-Ensure that "PGP/MIME" is enabled.  Why ???
-Send your colleague a digital signed email using your private key.
-Import the received keys into your key ring after fingerprint verification.
-What do you notice when Thunderbird is receiving PGP encrypted and signed emails ?  How does Thunderbird inform the user that the received email is PGP signed and / or encrypted ?
+- Generate a real world production key pair and associate it to one or more of your personal email addresses.
+- Install and configure the Enigmail package to work with the Thunderbird email client.
+- Enforce the use of AES256 into your $HOME/gpg.conf file.
+- Ensure that your key has a selfsigned signature (Default with GunpG).
+- Make a team with one or more of your colleagues.
+- Send your colleague an encrypted email WITH the "/etc/protocols" file as an attachment using his public key.
+- Ensure that "PGP/MIME" is enabled.  Why ???
+- Send your colleague a digital signed email using your private key.
+- Import the received keys into your key ring after fingerprint verification.
+- What do you notice when Thunderbird is receiving PGP encrypted and signed emails ?  How does Thunderbird inform the user that the received email is PGP signed and / or encrypted ?
 
 
 4)SKS Server Web Interface
   ========================
 
-Make your PGP key service accessible by means of a web page.
-Set up Apache2 Web Server accordingly.
-Test functionality.
+- Make your PGP key service accessible by means of a web page.
+- Set up Apache2 Web Server accordingly.
+- Test functionality.
 
 
 5)Debian Linux apt-key command
@@ -119,9 +119,8 @@ What is the purpose of the apt-key command ?
 6)Afterburners
   ============
 
-Who has developed PGP and how he got inspired and motivated ?
-
-Is there any PGP software available for Android platform ?
+- Who has developed PGP and how he got inspired and motivated ?
+- Is there any PGP software available for Android platform ?
 
 _________________________
 Have a golden day folks !
