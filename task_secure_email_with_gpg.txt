@@ -1,7 +1,7 @@
-CVO HITEK Kortrijk
+CVO MIRAS Kortrijk
 HBO5 INF C4
 Docent: Bruno SEYS	    TASK Secure Email with GnuPG
-==================      ============================
+==================          ============================
 
 
 Preparations
@@ -39,19 +39,19 @@ Ensure they have their home directory.
 	----------------		
 	|    bockor    |------------------
 	----------------                 |
-                                     | 
-                                     | 
-	----------------		 -------------------
+                                         | 
+                                         | 
+	----------------         -------------------
 	|    bavik     |---------| Sync Key Server |
 	----------------         ------------------- 
-                                     | 
-                                     |
+                                         | 
+                                         |
 	----------------                 | 		
 	|    ciney     |------------------
 	----------------
 
 Log in (NO su username !) using their credentials and generate their respective GPG & revocation key.  
-Use "gpg --full-generate-key". to genete keys, use RSA for encryption & sign - 3072 bits - No expiration date.
+Use "gpg --full-generate-key". to generate keys, use RSA for encryption & sign - 3072 bits - No expiration date.
 Email addresses convention : "bockor@beer.be", "bavik@beer.be" and "ciney@beer.be".
 Usually self signatures are created automatically by GnuPG.
 Usually revocation keys are created automatically by GnuPG.
