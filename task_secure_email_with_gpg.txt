@@ -1,7 +1,7 @@
 CVO MIRAS Kortrijk
 HBO5 INF C4
-Docent: Bruno SEYS	        TASK Secure Email with GnuPG
-==================          ============================
+Docent: Bruno SEYS        TASK Secure Email with GnuPG
+==================        ============================
 
 
 Preparations
